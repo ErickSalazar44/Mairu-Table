@@ -1,0 +1,17 @@
+.headerCell {
+    margin-top: 1.5rem;
+    position: relative;
+    background-color: var(--color-bg-tertiary);
+    display: flex;
+    align-items: center;
+  }
+
+.headerInput {
+    font-weight: 600;
+    background-color: var(--color-bg-tertiary);
+    color: var(--color-text-primary);
+}
+
+.headerCell .headerInput:hover {
+    background-color: var(--color-bg-secondary) !important;
+  }
