@@ -104,8 +104,10 @@ export const useDynamicTable = (
     initialColumns: number,
     initialRows: number
 ) => {
-    const [columns, setColumns] = useState<string[]>(MockDataColumns)
-    const [rows, setRows] = useState<string[][]>(MockDataRows)
+    const [columns, setColumns] = useState<string[]>(
+        MockDataColumns || initialColumns
+    )
+    const [rows, setRows] = useState<string[][]>(MockDataRows || initialRows)
 
     /* Handle Changes Inputs */
 
